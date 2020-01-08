@@ -6,10 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const addButton = document.querySelector("button")
   addButton.addEventListener("click", function () {
     getData()
-  })
-  
+  }) 
 });
-
 
 function getData() {
 fetch ("https://randomuser.me/api/")
