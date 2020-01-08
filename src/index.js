@@ -16,14 +16,9 @@ fetch ("https://randomuser.me/api/")
 }
 
 function addPerson(data) {
-
   const h3 = document.getElementById("fullname")
-  h3.innerText = data.results[0].name.first;
+  h3.innerText = data.results[0].name.title + " " + data.results[0].name.first + " " + data.results[0].name.last;
   
   const h4 = document.getElementById("email")
   h4.textContent = data.results[0].email;
-
-  const img = document.getElementById("profile_picture")
-  img.src = data.results[0].picture;
-
 }
